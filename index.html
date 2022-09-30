@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            .me {
+                background-color: black;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                color: white;
+                padding: 20px;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .nameholder {
+                display: inline-block;
+                background-color: black;
+                height: 33.33vh;
+                width: 100vw;
+                color: white;
+                padding: 20px;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                vertical-align: middle;
+            }
+            .navbar {
+                background-color: black;
+                height: auto;
+                width: 100vw;
+                color: white;
+                overflow: hidden;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .navbar a {
+                margin-left: 20px;
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 15px 20px;
+                text-decoration: none;
+                font-size: 17px;
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+            .navbar a:hover {
+                background-color: rgb(44, 44, 44);
+                color: white;
+                text-shadow: 0 0 5px white;
+            }
+            .me:hover{
+                text-shadow: 0 0 5px white;
+            }
+            .myVideo{
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                margin: auto;
+            }
+            .topcontainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 40vh;
+                width: 100vw;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                color: white;
+                font-size: 40px;
+                text-shadow: 0 0 5px white;
+                margin-top: 60px;
+            }
+            .middlecontainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 60vh;
+                width: 100vw;
+                background-color: rgba(0, 0, 0, 1);
+                position: fixed;
+                top: 40vh;
+                left: 0;
+                z-index: 1;
+                color: white;
+                font-size: 40px;
+                text-shadow: 0 0 5px white;
+                margin-top: 60px;
+            }
+            .col{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+                position: fixed;
+                left: 0;
+                z-index: 1;
+                color: white;
+                font-size: 40px;
+                text-shadow: 0 0 5px white;
+            }
+            .col-md-6{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 50vw;
+                left: 0;
+                z-index: 1;
+                color: white;
+                font-size: 40px;
+                text-shadow: 0 0 5px white;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 40vh;
+                width: 100vw;
+                position: fixed;
+                left: 0;
+                z-index: 1;
+                color: white;
+                font-size: 40px;
+                text-shadow: 0 0 5px white;
+            }
+            .informativeTitle{
+                font-size: 50px;
+                text-shadow: 0 0 5px white;
+            }
+            .informativeText{
+                font-size: 25px;
+                text-shadow: 0 0 5px white;
+            }
+            @media screen and (max-width: 900px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .navbar a {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nameHolder">
+            <div class="navbar">
+                <h1 class="me">Mateo Kladarić</h1>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="resume.html">Resume</a>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
+        <video autoplay muted loop class="myVideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <!-- container-->
+        <div class="topcontainer">
+            <div class="row">
+                <div class="videoforground">
+                    <h1 class="text-center">My Portfolio</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="middlecontainer">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="informativeTitle">My name is Mateo Kladarić</h1>
+                    <p class="informativeText">I am a 17 year old student from Croatia. </p>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="informativeTitle">I am a web developer</h1>
+                    <p class="informativeText">I am a web developer and I am currently learning Python.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
